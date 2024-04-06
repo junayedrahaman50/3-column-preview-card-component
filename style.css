@@ -1,0 +1,112 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-light-gray);
+}
+
+.wrapper {
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.938rem;
+  transition: all 0.4s ease-out;
+}
+
+.container {
+  width: 920px;
+  height: 498px;
+  margin-top: 2.6rem;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 307px;
+  height: 500px;
+  padding: 3rem;
+  transition: all 0.3s ease-out;
+}
+
+.card:nth-of-type(1) {
+  border-radius: 8px 0 0 8px;
+  background-color: var(--bright-orange);
+}
+
+.card:nth-of-type(2) {
+  background-color: var(--dark-cyan);
+}
+
+.card:nth-of-type(3) {
+  border-radius: 0 8px 8px 0;
+  background-color: var(--very-dark-cyan);
+}
+
+.card-heading {
+  color: var(--very-light-gray);
+  margin-top: 1.8rem;
+  margin-bottom: 1.6rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+}
+
+.card-description {
+  line-height: 1.55rem;
+  color: var(--transparent-white);
+}
+
+.card-btn:link,
+.card-btn:visited {
+  padding: 0.805rem 1.839rem;
+  border-radius: 2rem;
+  border: 2px solid var(--very-light-gray);
+  background-color: var(--very-light-gray);
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: transparent;
+  color: white;
+}
+
+.card-btn--1 {
+  color: var(--bright-orange);
+}
+
+.card-btn--2 {
+  color: var(--dark-cyan);
+}
+
+.card-btn--3 {
+  color: var(--very-dark-cyan);
+}
