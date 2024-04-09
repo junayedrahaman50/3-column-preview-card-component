@@ -6,7 +6,7 @@
   --very-light-gray: hsl(0, 0%, 95%);
 }
 
-/* css reset */
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -109,4 +109,38 @@ body {
 
 .card-btn--3 {
   color: var(--very-dark-cyan);
+}
+
+/* Media Queries */
+@media (max-width: 940px) {
+  body {
+    min-height: 1510px;
+  }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 330px;
+    min-height: 442px;
+    padding: 2.9rem 3rem;
+  }
+
+  .card:nth-of-type(1) {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card:nth-of-type(3) {
+    border-radius: 0 0 8px 8px;
+  }
 }
